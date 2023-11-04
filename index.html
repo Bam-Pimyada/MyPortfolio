@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff9907a6be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,400;1,300&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Pimyada Marlaithong-3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#myskill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi! I'm <br><span>Pimyada</span> Marlaithong</h1>
+                <p>First year Computer Engineering Student</p>
+            </div>
+        </div>
+    </div>
+    <!---------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="aboutcontent">Hi I’m Pimyada Marlaithong, first year Computer Engineering student at KMUTT. I've been committed to study in this faculty for a long time because my older brother is a data scientist, and I'll work hard to accomplish my ideal career.</p>
+                    
+                    <div id="education">
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <!--- Education --->
+                    
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2010 - 2016</span>
+                               <!--  <span id="level">(KG.3 - 6th Grade)</span> -->
+                                <br>Sarasas Ektra School
+                            </li>
+                            <li><span>2017 - 2019</span><br>Assumption Convent School</li>
+                            <li><span>2020 - 2022</span><br>Samsenwittayalai School</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!--- Skills --->
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Art & Design</span><br>Procreate / TinkerCad / Autodesk Maya</li>
+                            <li><span>Microsoft 365</span><br>Word / Powerpoint / Excel</li>
+                            <li><span>Time Management</span><br>Plan the schedule beforehand</li>
+                            <li><span>Collaboration</span><br>Responsible person</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr class="break"> -->
+    <!----------------Skill---------------------->
+
+    <div id="myskill">
+    <h1 class="sub-title" id="skillposition">My Skills</h1>
+    <div class="containerskill">
+        <div class="skill-box">
+            <span class="title"><i class="fa-regular fa-object-ungroup"></i>Art & Design</span>
+
+            <div class="skill-bar">
+                <span class="skill-per art&design">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title"><i class="fa-regular fa-file"></i>Microsoft 365</span>
+
+            <div class="skill-bar">
+                <span class="skill-per Microsoft">
+                    <span class="tooltip" >75%</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title"><i class="fa-regular fa-calendar-check"></i>Time Management</span>
+
+            <div class="skill-bar">
+                <span class="skill-per timemanagement">
+                    <span class="tooltip">80%</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <span class="title"><i class="fa-solid fa-users-viewfinder"></i>Collaboration</span>
+
+            <div class="skill-bar">
+                <span class="skill-per collaboration">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    </div>
+    
+    <!---------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" id="contactposition">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bambam.pimyada@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>061-945-9795</p>
+                    <div class="social-icons"><a href="https://www.facebook.com/bam.pimyada.3/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/bxxm.z/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://line.me/ti/p/-tcpiv0P6Q"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="blocksent">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023. Made with <i class="fa-solid fa-heart"></i> by Pimyada Marlaithong</p>
+        </div>
+    </div>
+
+<!-------------------------------------------->
+
+
+<!-------------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                    {
+                        tablink.classList.remove("active-link");
+                    }
+                for(tabcontent of tabcontents)
+                    {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+            {
+                sidemenu.style.right = "0";
+            }
+        function closemenu()
+            {
+                sidemenu.style.right = "-200px";
+            }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlLlXx-gLulc8NLOb6dyBms1579ahXI6ekGICr-h5JY6eSj3IJ3QXnpSMabrS9psi9_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function()
+                {
+                    msh.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
